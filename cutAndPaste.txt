@@ -1,0 +1,31 @@
+try 
+       {
+           int i=0;
+        try  {
+                    BNode current =in;
+                    int ptr=(int)current.getPointer();
+                    RandomAccessFile sraf= new RandomAccessFile(ptr+FILE_NAME, "rw");
+            try{
+                  sraf.seek(0);
+               }
+               catch(IOException e)
+               {
+                   e.getLocalizedMessage();
+               }
+           
+        }
+       catch (FileNotFoundException e) 
+       {
+            e.getLocalizedMessage();
+        }
+		//////////////////////////////////////////////////////////////////
+		List<String> keys = new ArrayList();
+        try
+        {
+            raf.seek(0);
+        }
+        catch(IOException e)
+        {
+            e.getLocalizedMessage();
+            
+        }
